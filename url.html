@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div style="text-align: center">
+        loading...
+    </div>
+    <script>
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]).replace(/(^\s*)|(\s*$)/g, "");
+            return null;
+        };
+        var href = window.location.href;
+        var project = GetQueryString("project")
+        var custom = GetQueryString("custom")
+        var id = GetQueryString("id")
+        var lang = GetQueryString("lang")||'en'
+        if(project==null){
+          alert("Error:project can not be null")
+        }else{
+          href = href.replace("url.html",project+"/"+custom+"/USER_Manual_"+lang+".pdf")
+          //console.log(href)
+          window.location.href = href
+        }
+        
+    </script>
+</body>
+
+</html>
