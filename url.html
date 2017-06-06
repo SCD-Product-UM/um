@@ -22,6 +22,9 @@
         var custom = GetQueryString("custom")
         var id = GetQueryString("id")
         var lang = GetQueryString("lang")||'en'
+        if(lang!='en'){
+            lang = 'en'
+        }
         if(project==null){
           alert("Error:project can not be null")
         }else{
