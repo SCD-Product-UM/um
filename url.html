@@ -11,6 +11,7 @@
         loading...
     </div>
     <script>
+        //http://www.tcl-move.com/um/url.html?project=HH41&custom=KR&lang=en
         function GetQueryString(name) {
             var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
             var r = window.location.search.substr(1).match(reg);
@@ -22,15 +23,16 @@
         var custom = GetQueryString("custom")
         var id = GetQueryString("id")
         var lang = GetQueryString("lang") || 'en'
-        if (lang != 'en') {
-            lang = 'en'
-        }
+
         if (project == null) {
             alert("Error:project can not be null")
         } else {
             if (project == "HH41" && custom == "KR") {
                 href = href.replace("url.html", project + "/flybox/flybox_um_" + lang + ".pdf")
-            }else{
+            } else {
+                if (lang != 'en') {
+                    lang = 'en'
+                }
                 href = href.replace("url.html", project + "/" + custom + "/USER_Manual_" + lang + ".pdf")
             }
             window.location.href = href
