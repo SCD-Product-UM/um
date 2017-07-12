@@ -24,6 +24,49 @@
         var id = GetQueryString("id")
         var lang = GetQueryString("lang") || 'en'
 
+        switch (project) {
+            case null:
+                alert("Error:project can not be null")
+                break;
+            case "HH40":
+                switch (custom) {
+                    case "___KR":
+                        //custom
+                        break;
+                    default:
+                        if (lang != 'en' && lang != 'de') {
+                            lang = 'en'
+                        }
+                        href = href.replace("url.html", project + "/Generic/USER_Manual_" + lang + ".pdf")
+                }
+                break;
+            case "HH41":
+                switch (custom) {
+                    case "KR":
+                        href = href.replace("url.html", project + "/flybox/flybox_um_" + lang + ".pdf")
+                        break;
+                    default:
+                        href = href.replace("url.html", project + "/Generic/USER_Manual_" + lang + ".pdf")
+                }
+                break;
+
+            case "HH70":
+                switch (custom) {
+                    case "___KR":
+                        //custom
+                        break;
+                    default:
+                        if (lang != 'en') {
+                            lang = 'en'
+                        }
+                        href = href.replace("url.html", project + "/Generic/USER_Manual_" + lang + ".pdf")
+                }
+                break;
+            default:
+                alert("Error:project not exist")
+        }
+        window.location.href = href
+        /*
         if (project == null) {
             alert("Error:project can not be null")
         } else {
@@ -36,7 +79,7 @@
                 href = href.replace("url.html", project + "/" + custom + "/USER_Manual_" + lang + ".pdf")
             }
             window.location.href = href
-        }
+        }*/
     </script>
 </body>
 
