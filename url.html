@@ -24,6 +24,9 @@
         var id = GetQueryString("id")
         var lang = GetQueryString("lang") || 'en'
 
+        if (lang != 'en_uk') {
+            lang = 'en'
+        }
         switch (project) {
             case null:
                 alert("Error:project can not be null")
@@ -34,7 +37,7 @@
                         //custom
                         break;
                     default:
-                        if (lang != 'en' && lang != 'de') {
+                        if (!contains(["en","fr","it","sp","tr","de"], lang)) {
                             lang = 'en'
                         }
                         href = href.replace("url.html", project + "/Generic/USER_Manual_" + lang + ".pdf")
@@ -46,6 +49,7 @@
                         href = href.replace("url.html", project + "/flybox/flybox_um_" + lang + ".pdf")
                         break;
                     default:
+                        
                         href = href.replace("url.html", project + "/Generic/USER_Manual_" + lang + ".pdf")
                 }
                 break;
@@ -80,6 +84,16 @@
             }
             window.location.href = href
         }*/
+
+        function contains(arr, obj) {
+            var i = arr.length;
+            while (i--) {
+                if (arr[i] === obj) {
+                    return true;
+                }
+            }
+            return false;
+        }
     </script>
 </body>
 
