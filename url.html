@@ -23,10 +23,26 @@
         var custom = GetQueryString("custom")
         var id = GetQueryString("id")
         var lang = GetQueryString("lang") || 'en'
-
         if (lang == 'en_uk') {
             lang = 'en'
         }
+        if (lang == 'sp' || lang == 'sp_latam') {
+            lang = 'es'
+        }
+
+        var currentGenericUmList_HH70 = [
+            "de", "en", "es", "fr",
+            "hr", "it", "pl"
+        ];
+        var currentGenericUmList_HH41 = [
+            "ar", "bg", "de", "en",
+            "fr", "hr", "it", "mk",
+            "sl", "es", "sr"
+        ];
+        var currentGenericUmList_HH40 = [
+            "de", "en", "fr", "it",
+            "es", "tr"
+        ]
         switch (project) {
             case null:
                 alert("Error:project can not be null")
@@ -37,7 +53,7 @@
                         //custom
                         break;
                     default:
-                        if (!contains(["en","fr","it","sp","tr","de"], lang)) {
+                        if (!contains(currentGenericUmList_HH40, lang)) {
                             lang = 'en'
                         }
                         href = href.replace("url.html", project + "/Generic/USER_Manual_" + lang + ".pdf")
@@ -48,7 +64,10 @@
                     case "KR":
                         href = href.replace("url.html", project + "/flybox/flybox_um_" + lang + ".pdf")
                         break;
-                    default:    
+                    default:
+                        if (!contains(currentGenericUmList_HH41, lang)) {
+                            lang = 'en'
+                        }
                         href = href.replace("url.html", project + "/Generic/USER_Manual_" + lang + ".pdf")
                 }
                 break;
@@ -59,7 +78,7 @@
                         //custom
                         break;
                     default:
-                        if (lang != 'en') {
+                        if (!contains(currentGenericUmList_HH70, lang)) {
                             lang = 'en'
                         }
                         href = href.replace("url.html", project + "/Generic/USER_Manual_" + lang + ".pdf")
