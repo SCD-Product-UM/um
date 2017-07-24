@@ -24,7 +24,7 @@
         var id = GetQueryString("id")
         var lang = GetQueryString("lang") || 'en'
 
-        if (lang != 'en_uk') {
+        if (lang == 'en_uk') {
             lang = 'en'
         }
         switch (project) {
@@ -48,8 +48,7 @@
                     case "KR":
                         href = href.replace("url.html", project + "/flybox/flybox_um_" + lang + ".pdf")
                         break;
-                    default:
-                        
+                    default:    
                         href = href.replace("url.html", project + "/Generic/USER_Manual_" + lang + ".pdf")
                 }
                 break;
