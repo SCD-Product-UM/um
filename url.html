@@ -39,6 +39,10 @@
             "fr", "hr", "it", "mk",
             "sl", "es", "sr"
         ];
+
+        var currentGenericUmList_HH41_NH = [
+            "en", "es"
+        ]
         var currentGenericUmList_HH40 = [
             "de", "en", "fr", "it",
             "es", "tr"
@@ -60,16 +64,30 @@
                 }
                 break;
             case "HH41":
-                switch (custom) {
-                    case "KR":
-                        href = href.replace("url.html", project + "/flybox/flybox_um_" + lang + ".pdf")
-                        break;
-                    default:
-                        if (!contains(currentGenericUmList_HH41, lang)) {
-                            lang = 'en'
-                        }
-                        href = href.replace("url.html", project + "/Generic/USER_Manual_" + lang + ".pdf")
+                if (custom.indexOf("NH_") == 0) {
+                    switch (custom) {
+                        case "___KR":
+                            break;
+                        default:
+                            if (!contains(currentGenericUmList_HH41_NH, lang)) {
+                                lang = 'en'
+                            }
+                            href = href.replace("url.html", project + "/Generic_NH/USER_Manual_" + lang + ".pdf")
+                    }
+                } else {
+                    switch (custom) {
+                        case "KR":
+                            href = href.replace("url.html", project + "/flybox/flybox_um_" + lang + ".pdf")
+                            break;
+                        default:
+
+                            if (!contains(currentGenericUmList_HH41, lang)) {
+                                lang = 'en'
+                            }
+                            href = href.replace("url.html", project + "/Generic/USER_Manual_" + lang + ".pdf")
+                    }
                 }
+
                 break;
 
             case "HH70":
