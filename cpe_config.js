@@ -20,7 +20,11 @@ var cpe_config = {
         "USER_Manual_tr.pdf"
       ]
     }, 
-    "规则说明.txt": {}
+    "E6_NOS_Portugal": {
+      "umlist": [
+        "USER_Manual_pt.pdf"
+      ]
+    }
   }, 
   "HH41": {
     "00_Generic": {
@@ -56,8 +60,7 @@ var cpe_config = {
         "flybox_um_en.pdf", 
         "flybox_um_fr.pdf"
       ]
-    }, 
-    "规则说明.txt": {}
+    }
   }, 
   "HH70": {
     "00_Generic": {
@@ -71,7 +74,6 @@ var cpe_config = {
         "USER_Manual_it.pdf", 
         "USER_Manual_pl.pdf"
       ]
-    }, 
-    "规则说明.txt": {}
+    }
   }
 }

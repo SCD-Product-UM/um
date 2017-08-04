@@ -22,8 +22,8 @@ def getList(project):
   umData[project]={}
   filelist = os.listdir(project)
   for customName in filelist:
-    umData[project][customName] ={}
     if os.path.isdir(project+"/"+customName):
+      umData[project][customName] ={}
       umlist = os.listdir(project+"/"+customName)
       umData[project][customName]["umlist"] =[]
       for um in umlist:
