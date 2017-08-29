@@ -60,6 +60,16 @@ var cpe_config = {
         "flybox_um_en.pdf", 
         "flybox_um_fr.pdf"
       ]
+    }, 
+    "LF_tag_group": {
+      "umlist": [
+        "USER_Manual_bg.pdf", 
+        "USER_Manual_en.pdf", 
+        "USER_Manual_hr.pdf", 
+        "USER_Manual_mk.pdf", 
+        "USER_Manual_sl.pdf", 
+        "USER_Manual_sr.pdf"
+      ]
     }
   }, 
   "HH70": {
