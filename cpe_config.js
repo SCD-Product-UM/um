@@ -48,6 +48,14 @@ var cpe_config = {
         "USER_Manual_es.pdf"
       ]
     }, 
+    "HL_orange_mea": {
+      "umlist": [
+        "flybox_um_ar.pdf", 
+        "flybox_um_en.pdf", 
+        "flybox_um_fr.pdf", 
+        "flybox_um_pt.pdf"
+      ]
+    }, 
     "JO_claro_dominica": {
       "umlist": [
         "USER_Manual_en.pdf", 
