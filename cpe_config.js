@@ -53,7 +53,7 @@ var cpe_config = {
         "flybox_um_ar.pdf", 
         "flybox_um_en.pdf", 
         "flybox_um_fr.pdf", 
-        "flybox_um_pt.pdf"
+        "flybox_um_pg.pdf"
       ]
     }, 
     "JO_claro_dominica": {
