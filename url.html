@@ -77,7 +77,7 @@
         if (umPath == "") {
           umPath = findUmPath("00_Generic")
         }
-        $("#loading").html("")
+        document.getElementById("loading").innerHTML=""
         window.location.href = href.replace("url.html", umPath)
       } else {
         alert("Error:project error")
