@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div style="text-align: center">
+  <div style="text-align: center" id="loading">
     loading...
   </div>
   <script>
@@ -77,7 +77,7 @@
         if (umPath == "") {
           umPath = findUmPath("00_Generic")
         }
-
+        $("#loading").html("")
         window.location.href = href.replace("url.html", umPath)
       } else {
         alert("Error:project error")
