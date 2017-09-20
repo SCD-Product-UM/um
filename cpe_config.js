@@ -24,6 +24,12 @@ var cpe_config = {
       "umlist": [
         "USER_Manual_pt.pdf"
       ]
+    }, 
+    "IP_ALHR": {
+      "umlist": [
+        "USER_Manual_en.pdf", 
+        "USER_Manual_hr.pdf"
+      ]
     }
   }, 
   "HH41": {
@@ -43,6 +49,12 @@ var cpe_config = {
       ]
     }, 
     "01_Generic_Latam": {
+      "umlist": [
+        "USER_Manual_en.pdf", 
+        "USER_Manual_es.pdf"
+      ]
+    }, 
+    "GT_telcel_mexico": {
       "umlist": [
         "USER_Manual_en.pdf", 
         "USER_Manual_es.pdf"
