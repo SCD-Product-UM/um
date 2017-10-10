@@ -102,7 +102,8 @@ var cpe_config = {
         "USER_Manual_fr.pdf", 
         "USER_Manual_hr.pdf", 
         "USER_Manual_it.pdf", 
-        "USER_Manual_pl.pdf"
+        "USER_Manual_pl.pdf", 
+        "USER_Manual_tr.pdf"
       ]
     }
   }
