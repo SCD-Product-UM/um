@@ -58,6 +58,10 @@ var cpe_config = {
         "USER_Manual_fr.pdf"
       ]
     }, 
+    "02_Generic_Latam": {
+      "redirect": "01_Generic_Latam", 
+      "umlist": []
+    }, 
     "GT_telcel_mexico": {
       "umlist": [
         "USER_Manual_en.pdf", 
