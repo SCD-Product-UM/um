@@ -25,6 +25,9 @@ var cpe_config = {
         "USER_Manual_pt.pdf"
       ]
     }, 
+    "GV_Unitel_Angola": {
+      "umlist": []
+    }, 
     "IP_ALHR": {
       "umlist": [
         "USER_Manual_en.pdf", 
@@ -51,7 +54,8 @@ var cpe_config = {
     "01_Generic_Latam": {
       "umlist": [
         "USER_Manual_en.pdf", 
-        "USER_Manual_es.pdf"
+        "USER_Manual_es.pdf", 
+        "USER_Manual_fr.pdf"
       ]
     }, 
     "GT_telcel_mexico": {
