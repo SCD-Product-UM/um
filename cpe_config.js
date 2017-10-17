@@ -26,7 +26,11 @@ var cpe_config = {
       ]
     }, 
     "GV_Unitel_Angola": {
-      "umlist": []
+      "umlist": [
+        "USER_Manual_en.pdf", 
+        "USER_Manual_fr.pdf", 
+        "USER_Manual_pt.pdf"
+      ]
     }, 
     "IP_ALHR": {
       "umlist": [
