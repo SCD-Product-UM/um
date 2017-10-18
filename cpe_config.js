@@ -22,14 +22,14 @@ var cpe_config = {
     }, 
     "E6_NOS_Portugal": {
       "umlist": [
-        "USER_Manual_pt.pdf"
+        "USER_Manual_pg.pdf"
       ]
     }, 
     "GV_Unitel_Angola": {
       "umlist": [
         "USER_Manual_en.pdf", 
         "USER_Manual_fr.pdf", 
-        "USER_Manual_pt.pdf"
+        "USER_Manual_pg.pdf"
       ]
     }, 
     "IP_ALHR": {
