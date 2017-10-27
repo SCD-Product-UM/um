@@ -102,6 +102,12 @@ var cpe_config = {
         "USER_Manual_sl.pdf", 
         "USER_Manual_sr.pdf"
       ]
+    }, 
+    "LR_telefonica_centralamerica": {
+      "umlist": [
+        "USER_Manual_en.pdf", 
+        "USER_Manual_es.pdf"
+      ]
     }
   }, 
   "HH70": {
