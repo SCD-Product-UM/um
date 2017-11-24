@@ -108,6 +108,12 @@ var cpe_config = {
         "USER_Manual_en.pdf", 
         "USER_Manual_es.pdf"
       ]
+    }, 
+    "LX_airtel_niger": {
+      "umlist": [
+        "USER_Manual_en.pdf", 
+        "USER_Manual_fr.pdf"
+      ]
     }
   }, 
   "HH70": {
