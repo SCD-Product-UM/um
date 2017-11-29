@@ -25,6 +25,14 @@ var cpe_config = {
         "USER_Manual_pg.pdf"
       ]
     }, 
+    "FH_Telekom_Serbia": {
+      "umlist": [
+        "USER_Manual_de.pdf", 
+        "USER_Manual_en.pdf", 
+        "USER_Manual_hr.pdf", 
+        "USER_Manual_sr.pdf"
+      ]
+    }, 
     "GV_Unitel_Angola": {
       "umlist": [
         "USER_Manual_en.pdf", 
@@ -37,6 +45,9 @@ var cpe_config = {
         "USER_Manual_en.pdf", 
         "USER_Manual_hr.pdf"
       ]
+    }, 
+    "KJ_Orange_Romania": {
+      "umlist": []
     }
   }, 
   "HH41": {
