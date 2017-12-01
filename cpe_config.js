@@ -47,7 +47,12 @@ var cpe_config = {
       ]
     }, 
     "KJ_Orange_Romania": {
-      "umlist": []
+      "umlist": [
+        "USER_Manual_en.pdf", 
+        "USER_Manual_fr.pdf", 
+        "USER_Manual_hg.pdf", 
+        "USER_Manual_ro.pdf"
+      ]
     }
   }, 
   "HH41": {
