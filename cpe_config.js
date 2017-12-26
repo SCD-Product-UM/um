@@ -25,6 +25,12 @@ var cpe_config = {
         "USER_Manual_pg.pdf"
       ]
     }, 
+    "FC_ALPL": {
+      "umlist": [
+        "USER_Manual_en.pdf", 
+        "USER_Manual_pl.pdf"
+      ]
+    }, 
     "FH_Telekom_Serbia": {
       "umlist": [
         "USER_Manual_de.pdf", 
@@ -94,6 +100,12 @@ var cpe_config = {
         "flybox_um_en.pdf", 
         "flybox_um_fr.pdf", 
         "flybox_um_pg.pdf"
+      ]
+    }, 
+    "JI_claro_colombia": {
+      "umlist": [
+        "USER_Manual_en.pdf", 
+        "USER_Manual_es.pdf"
       ]
     }, 
     "JO_claro_dominica": {
