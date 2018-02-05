@@ -25,6 +25,16 @@ var cpe_config = {
         "USER_Manual_pg.pdf"
       ]
     }, 
+    "EP_DTGROUP": {
+      "umlist": [
+        "USER_Manual_de.pdf", 
+        "USER_Manual_en.pdf", 
+        "USER_Manual_fr.pdf", 
+        "USER_Manual_it.pdf", 
+        "USER_Manual_pl.pdf", 
+        "USER_Manual_sp.pdf"
+      ]
+    }, 
     "FC_ALPL": {
       "umlist": [
         "USER_Manual_en.pdf", 
