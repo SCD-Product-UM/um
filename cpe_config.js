@@ -29,10 +29,10 @@ var cpe_config = {
       "umlist": [
         "USER_Manual_de.pdf", 
         "USER_Manual_en.pdf", 
+        "USER_Manual_es.pdf", 
         "USER_Manual_fr.pdf", 
         "USER_Manual_it.pdf", 
-        "USER_Manual_pl.pdf", 
-        "USER_Manual_sp.pdf"
+        "USER_Manual_pl.pdf"
       ]
     }, 
     "FC_ALPL": {
