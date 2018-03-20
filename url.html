@@ -105,6 +105,9 @@
       if (lang == 'sp' || lang == 'sp_latam') {
         lang = 'es'
       }
+      if (lang == 'po') {//WEB UI使用po，APP使用pl
+        lang = 'pl'
+      }
       initCpeUM()
     }
     init()
